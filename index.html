@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LeoMart — Everyday Shopping</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topline"><a class="logo" href="index.html">Leo<span>Mart</span></a>
+    <nav class="quick"><a href="#deals">Deals</a><a href="#categories">Categories</a><a href="#products">Products</a></nav>
+    <div class="header-actions"><a href="#" id="accountBtn">Account</a><a class="cart-link" href="cart.html">Cart <b id="cartCount">0</b></a></div>
+  </div>
+  <div class="search-row"><form id="searchForm"><input id="searchInput" placeholder="Search products, brands and categories" autocomplete="off"><button>Search</button></form></div>
+</header>
+
+<main>
+<section class="hero" id="deals"><div><p class="eyebrow">WEEKEND DEALS</p><h1>More value for your everyday.</h1><p>Shop popular essentials, tech, home finds and more.</p><a class="btn" href="#products">Shop deals</a></div><div class="hero-art"><span>⚡</span><strong>UP TO 40% OFF</strong></div></section>
+
+<section class="section" id="categories"><div class="section-head"><h2>Shop by category</h2></div><div id="categoryGrid" class="category-grid"></div></section>
+
+<section class="section" id="products"><div class="section-head"><h2>Popular picks</h2><div class="controls"><select id="categoryFilter"><option value="all">All categories</option></select><select id="sortFilter"><option value="featured">Featured</option><option value="price-low">Price: Low to high</option><option value="price-high">Price: High to low</option><option value="name">Name</option></select></div></div><div id="productGrid" class="product-grid"></div><p id="empty" class="empty hidden">No products match your search.</p></section>
+</main>
+
+<footer><div><strong>LeoMart</strong><p>Simple shopping demo built for GitHub Pages.</p></div><div><h4>Customer care</h4><a href="#">Help center</a><a href="#">Shipping</a><a href="#">Returns</a></div><div><h4>Company</h4><a href="#">About</a><a href="#">Privacy</a><a href="#">Terms</a></div></footer>
+<div id="toast" class="toast"></div>
+<script src="js/products.js"></script><script src="js/app.js"></script>
+</body></html>
